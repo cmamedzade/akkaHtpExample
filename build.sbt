@@ -16,7 +16,10 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-stream" % AkkaVersion,
   "com.typesafe.akka" %% "akka-actor-typed" % AkkaVersion,
   "com.typesafe.akka" %% "akka-http-spray-json" % AkkaHttpVersion,
-  "io.github.zamblauskas" %% "scala-csv-parser" % "0.13.1",
-  "com.typesafe.akka" %% "akka-http-testkit" % AkkaHttpVersion % "Test",
-  "com.typesafe.akka" %% "akka-stream-testkit" % AkkaVersion % "Test"
+  "com.lightbend.akka" %% "akka-stream-alpakka-csv" % "2.0.0",
+  "com.typesafe.akka" %% "akka-stream" % AkkaVersion,
+  "org.scalatest" %% "scalatest" % "3.2.12" % "test",
+  "com.typesafe.akka" %% "akka-http-testkit" % AkkaHttpVersion % Test,
+  "com.typesafe.akka" %% "akka-testkit" % AkkaVersion % Test,
+  "com.typesafe.akka" %% "akka-stream-testkit" % AkkaVersion % Test
 )
